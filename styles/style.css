@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@600&display=swap');
+
+/* css page d'acceuil */
+
+body {
+    padding: 0 2%;
+    margin: 2;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/arriére.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo {
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+span {
+    color: darkorange;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover {
+    color: darkorange;
+    transition: .4s;
+}
+
+.btn {
+    background-color: darkorange;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+
+h1 {
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 70px;
+}
+
+h3 {
+    color: darkorange;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+h4 {
+    color: white;
+    letter-spacing: 2px;
+}
+
+
+
+/* css de portfolio */
+
+
+#profil {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    /* position: sticky; */
+    top: 0;
+    padding: 10px;
+    /* Ajout d'un peu d'espace intérieur pour améliorer l'apparence */
+}
+
+#profil .profile {
+    display: flex;
+    align-items: center;
+    background-color: rgb(72, 173, 231);
+}
+
+#profil .profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    /* Ajout d'une marge à droite pour espacer l'image du texte */
+}
+
+#profil .profile h1 {
+    font-size: 15px;
+}
+
+#profil ul {
+    display: flex;
+    list-style-type: none;
+}
+
+#profil ul li {
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    /* Ajout d'une bordure transparente par défaut */
+    padding: 0 10px;
+    /* Espacement des éléments de la liste */
+}
+
+.page-content {
+    margin: 4%;
+    padding: 0;
+    background-color: white;
+}
+
+.page-content header {
+    margin-top: 5%;
+    max-width: 80%;
+}
+
+.page-content .header-portfolio h2 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 6vw;
+    text-decoration: #818181;
+}
+
+.page-content header p {
+    line-height: 30px;
+    color: #818181;
+}
+
+.page-content .presentation-image img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+.page-content .projects-section {
+    margin-top: 6%;
+}
+
+.page-content .projects-section h2 {
+    text-transform: uppercase;
+    font-size: 4vw;
+}
+
+.page-content .projects-section .projects {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.page-content .projects-section .projects .project {
+    margin-right: 20px;
+    max-width: 195px;
+
+}
+
+.page-content .projects-section .projects .project h4 {
+    margin: 10%;
+    color: black;
+}
+
+.page-content .projects-section .projects .project .description {
+    font-size: 10px;
+}
+
+.page-content .projects-section .projects .project .dates {
+    font-size: 13px;
+    color: #818181;
+}
+
+.page-content .projects-section .projects .project img {
+    background-size: contain;
+    width: 160px;
+    height: 160px;
+    border: 2px;
+    resize: both;
+    overflow: scroll;
+}
+
+
+
+/* css de compétence */
+
+
+#compétence {
+    margin: 2%;
+    padding: 0 2%;
+    font-family: 'Montserrat', sans-serif;
+}
+#compétence nav .onglets h1 {
+    color: #717171;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+#compétence h4{
+    color: black;
+    text-align: center;
+}
+
+#compétence nav .onglets {
+    margin-top: 3px;
+    margin-left: 200px;
+    /* background-color:  rgb(120, 164, 230); */
+}
+
+#compétence nav .onglets a {
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+
+#compétence .section .section-one {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+
+
+
+#compétence .main {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#compétence .main .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.main .card .left {
+    margin: 5px;
+    width: 625px;
+    flex: 0 10 35%;
+    padding: 25px;
+    background-color: black;
+    color: #fff;
+}
+
+.main .card .right {
+    flex: 0 0 50%;
+}
+
+.main .card .right img {
+    height: 300px;
+    width: 400px;
+    margin-top: 5px;
+}
+
+
+/* css de contact */
+
+#contact {
+    margin: 0px;
+    padding: 0px;
+    background-color: non;
+    position: absolute;
+    transform: translate(70%, 10%);
+    font-weight: bold;
+    
+}
+
+#contact h1 {
+    color: black;
+}
+
+form {
+    background-color: rgb(120, 164, 230);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 35px;
+}
+
+form h1 {
+    font-size: 20px;
+}
+
+form .separation {
+    width: 100%;
+    height: 1px;
+    background-color: #040844;
+}
+
+form .corps-formulaire {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+form .corps-formulaire .groupe {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+form .corps-formulaire .gauche .groupe input {
+    margin-top: 5px;
+    padding: 10px 5px 10px 30px;
+    border: 1px solid #c9c9c9;
+    outline-color: #040844;
+    border-radius: 5px;
+}
+
+form .corps-formulaire .gauche .groupe i {
+    position: absolute;
+    left: 0;
+    top: 25px;
+    padding: 9px 8px;
+    color: #040844;
+}
+
+form .corps-formulaire .droite {
+    margin-left: 40px;
+}
+
+form .corps-formulaire .droite .groupe {
+    height: 100%;
+}
+
+form .corps-formulaire .droite .groupe textarea {
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: 2px solid #040844;
+    outline: none;
+    border-radius: 5px;
+    resize: none;
+    height: 72%;
+}
+form .pied-formulaire button{
+    margin-top: 10px;
+    background-color: #040844;
+    color: #f8f8f8;
+    font-size: 15px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+form .pied-formulaire button:hover{
+    transform: scale(1.05);
+}
+
+/* addaptation a l'ecran mobile */
+
+@media screen and(max-width: 700px) {
+    nav {
+        justify-content: center;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav .btn {
+        display: none;
+    }
+
+    .page-content header {
+        margin-top: 10%;
+        max-width: 100%;
+    }
+
+    .page-content .projects-section {
+        margin-top: 15%;
+    }
+
+    .page-content .projects-section h1 {
+        font-size: 1.5em;
+    }
+
+    .page-content .projects-section .projects .project {
+        margin-right: 0;
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+
+    form .corps-formulaire .droite{
+        margin-left: 0px;
+    }
+    
+    nav {
+        justify-content: center;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav .btn {
+        display: none;
+    }
+}
